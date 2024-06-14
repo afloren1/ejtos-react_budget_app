@@ -11,14 +11,9 @@ const Currency = () => {
             })
     }
     return (
-        <div>
-            <div className='row'>
-
-            <div className='alert alert-secondary'></div>
-            <span>Currency</span>
-                  </div>
+                    <div className='alert alert-secondary'>
+                    <span>Currency {Currency}</span>
                   <select className="custom-select" id="inputGroupSelect01" onChange={(event) => changeCurrency(event.target.value)}>
-                        <option defaultValue>Choose...</option>
                         <option value="$">Dollar($)</option>
                         <option value="£">Pound(£)</option>
                         <option value="€">Euro(€)</option>
@@ -26,8 +21,6 @@ const Currency = () => {
 
                   </select>
                 </div>
-
-        </div>
     );
-    
-export default Currency;
+    };
+export default Currency; 
